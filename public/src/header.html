@@ -1,0 +1,11 @@
+<header>
+    <nav>
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="#" id="logout">Logout</a>
+    </nav>
+</header>
+<script type="module">
+    import { signOut } from '../js/auth.js';
+    document.getElementById('logout').addEventListener('click', signOut);
+</script>
